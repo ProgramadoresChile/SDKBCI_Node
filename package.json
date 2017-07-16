@@ -1,6 +1,6 @@
 {
   "name": "bci",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "SDKBCI",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,10 @@
   },
   "dependencies": {
     "node-fetch-npm": "^2.0.1"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/ProgramadoresChile/SDKBCI_Node.git"
   },
   "keywords": ["Api","BCI","Api-Bci","SDK"],
   "author": "Luis Vilches",
