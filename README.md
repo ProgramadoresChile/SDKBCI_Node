@@ -7,9 +7,9 @@ An API client that comes handy to connect with BCI developers API.
 
 Instalacion:
 
-
+```
 $ npm install bci --save
- 
+```
 ## Usage
 
 Inicializar modulo bci:
