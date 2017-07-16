@@ -13,18 +13,18 @@ $ npm install bci --save
 ## Usage
 
 Inicializar modulo bci:
-
+```
 const bci = require('bci');
 const tokens = 'YOUR_TOKENS';
 
 let consulta = new bci.Bci(tokens); // obtenemos los metodos de consulta de bci
 
--> consulta.indicadores() :  Nos retorna los indicadores financieros del Banco Bci
--> consulta.sucursales() : Nos retorna todas las sucursales del Banco Bci
--> consulta.cajeros() : Nos retorna todos los cajeros del Banco Bci
--> consulta.beneficios(PARAMS) : nos retorna los beneficios asociados al Banco Bci
+-> consulta.indicadores() // Nos retorna los indicadores financieros del Banco Bci
+-> consulta.sucursales() // Nos retorna todas las sucursales del Banco Bci
+-> consulta.cajeros() // Nos retorna todos los cajeros del Banco Bci
+-> consulta.beneficios(PARAMS) // nos retorna los beneficios asociados al Banco Bci
 
-PARAMS: parametro que debemos pasar al metodo benificios() para obtener los datos, los parametros pueden ser los siguientes:
+//PARAMS: parametro que debemos pasar al metodo benificios() para obtener los datos, los parametros pueden ser los siguientes:
 
 -> 'descuentos-shopping'
 -> 'productos-tienda'
@@ -60,10 +60,10 @@ objeto = {
 
 let hipotecario = new bci.Hipotecario(tokens);
 
--> hipotecario.find() : nos retorna los tipos de creditos hipotecario existentes
--> hipotecario.findById(id) : nos retorna un tipo de credito hipotecario segun el id
--> hipotecario.tasas(id,plazo) : nos retorna el resultado de un credito segun el plazo
--> hipotecario.simulacion(id,objeto) :  Nos permite simular un credito hipotecario para lo cual le pasamos un objeto con parametros.
+-> hipotecario.find() // nos retorna los tipos de creditos hipotecario existentes
+-> hipotecario.findById(id) // nos retorna un tipo de credito hipotecario segun el id
+-> hipotecario.tasas(id,plazo) // nos retorna el resultado de un credito segun el plazo
+-> hipotecario.simulacion(id,objeto) //  Nos permite simular un credito hipotecario para lo cual le pasamos un objeto con parametros.
 
 // ejemplo: 
 var objeto = { anosTasaFija: 2,
@@ -101,7 +101,7 @@ var objeto = { anosTasaFija: 2,
     region: 23,
     json: true 
 };
-
+```
 ## Development
 
 License
